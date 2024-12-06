@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="hero-title">Welcome to Santa's Logistics</h1>
+        <p>Your one-stop solution for managing Santa's gift delivery around the world!</p>
+        <a href="#features" class="btn btn-custom">Track Santa's Route</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="container py-5">
+    <h2 class="text-center mb-5">How Santa's Logistics Works</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-map"></i>
+                    </div>
+                    <h4>Route Optimization</h4>
+                    <p>Santa can efficiently deliver gifts by optimizing delivery routes using advanced algorithms.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h4>Real-Time Tracking</h4>
+                    <p>Follow Santa's sleigh in real-time as he delivers gifts around the globe!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-gift"></i>
+                    </div>
+                    <h4>Gift Distribution</h4>
+                    <p>Manage and track the gifts delivered to each home with detailed progress and status.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock 'main' %}

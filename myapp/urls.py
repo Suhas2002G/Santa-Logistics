@@ -6,8 +6,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.home),
+    path('login', views.user_login),
 
 
-    
+
 ]
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

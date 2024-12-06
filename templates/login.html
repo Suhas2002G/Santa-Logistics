@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+<div class="container py-5">
+    <div class="login-container">
+        <!-- Login Form -->
+        <h2 class="login-header">Santa's Logistics Login</h2>
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Login</button>
+        </form>
+        <!-- Forgot password link -->
+        <div class="forget-pass">
+            <a href="#" style="color: #ff204e;">Forgot password?</a>
+        </div>
+    </div>
+</div>
+{% endblock 'main' %}

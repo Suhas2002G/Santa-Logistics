@@ -1,26 +1,42 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block 'main' %}
+{% extends 'base.html' %} {% load static %} {% block 'main' %}
 
 <div class="container py-5">
-    <div class="login-container">
-        <!-- Login Form -->
-        <h2 class="login-header">Santa's Logistics Login</h2>
-        <form action="#" method="POST">
-            <div class="mb-3">
-                <label for="username" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your email id" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-            </div>
-            <button type="submit" class="btn btn-custom w-100">Login</button>
-        </form>
-        <!-- Forgot password link -->
-        <div class="forget-pass">
-            <a href="#" style="color: #ff204e;">Forgot password?</a>
-        </div>
+  <div class="login-container">
+    {% if errormsg %}
+    <div class="alert alert-danger" role="alert">{{errormsg}}</div>
+    {% endif %}
+    <!-- Login Form -->
+    <h2 class="login-header">Santa's Logistics Login</h2>
+    <form action="#" method="POST">
+        {% csrf_token %}
+      <div class="mb-3">
+        <label for="username" class="form-label">Email</label>
+        <input
+          type="text"
+          name="ue"
+          class="form-control"
+          id="email"
+          placeholder="Enter your email id"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          name="upass"
+          class="form-control"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-custom w-100">Login</button>
+    </form>
+    <!-- Forgot password link -->
+    <div class="forget-pass">
+      <a href="/register" style="color: #ff204e">Don't have account?</a>
     </div>
+  </div>
 </div>
 {% endblock 'main' %}

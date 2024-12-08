@@ -2,9 +2,13 @@
 
 <div class="container py-5">
   <div class="login-container">
+
     {% if errormsg %}
-    <div class="alert alert-danger" role="alert">{{errormsg}}</div>
+    <div class="alert alert-danger custom-alert" role="alert">
+      <i class="bi bi-x-circle"></i> {{ errormsg }}
+    </div>
     {% endif %}
+    
     <!-- Login Form -->
     <h2 class="login-header">Santa's Logistics Login</h2>
     <form action="#" method="POST">

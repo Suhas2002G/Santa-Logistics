@@ -135,6 +135,51 @@
 
 
 
+/* alert boxes start  */
+.custom-alert {
+  border-radius: 10px;            
+  font-size: 1.1rem;              
+  padding: 15px;                  
+  margin-bottom: 20px; 
+  display: flex;                  
+  align-items: center;
+}
+
+.alert-danger {
+  background-color: #f8d7da;      
+  border-color: #f5c6cb;          
+  color: #721c24;                 
+  border-left: 5px solid #721c24; 
+}
+
+.alert-success {
+  background-color: #d4edda;      
+  border-color: #c3e6cb;          
+  color: #155724;                 
+  border-left: 5px solid #155724; 
+}
+
+.custom-alert i {
+  font-size: 1.5rem;              
+  margin-right: 10px;            
+}
+
+.alert-danger .bi-x-circle {
+  color: #721c24;                
+}
+
+.alert-success .bi-check-circle {
+  color: #155724;                
+}
+
+.alert-danger:hover, .alert-success:hover {
+  opacity: 0.9;                   
+}
+
+/* alert boxes ends  */
+
+
+
 /* dashboard starts here  */
 .dashboard {
   padding: 20px;

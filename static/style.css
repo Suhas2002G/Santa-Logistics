@@ -101,7 +101,7 @@
   }
 
 
-/* login page style starts here  */
+/* login-register page style starts here  */
 .login-container {
         background-color: #fff;
         padding: 40px;
@@ -131,7 +131,8 @@
     .forget-pass{
         margin-top: 15px;
     }
-/* login page style ends here  */
+/* login-register page style ends here  */
+
 
 
 /* dashboard starts here  */

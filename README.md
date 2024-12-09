@@ -1,8 +1,7 @@
 
 <h1>Santa's Logistics</h1>
 
-<br><h2>Short Description</h2>
-    <p><strong>Santa's Logistics</strong> is a festive, full-stack web application designed to optimize and track Santa’s gift delivery journey. The project simulates the logistics and route optimization process for delivering gifts during the Christmas season. The application includes real-time tracking, route optimization, and a user-friendly interface for managing deliveries. It aims to improve the delivery process and provide an engaging, interactive experience for users.</p>
+<p><strong>Santa's Logistics</strong> is a festive, full-stack web application designed to optimize and track Santa’s gift delivery journey. The project simulates the logistics and route optimization process for delivering gifts during the Christmas season. The application includes real-time tracking, route optimization, and a user-friendly interface for managing deliveries. It aims to improve the delivery process and provide an engaging, interactive experience for users.</p>
 
 <h2>Features</h2>
     <ul>

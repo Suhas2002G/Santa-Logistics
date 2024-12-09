@@ -1,6 +1,7 @@
 /* navbar style starts here  */
 .navbar-custom {
     background-color: #ff204e;
+    height: 70px;
   }
   .navbar-custom .navbar-brand,
   .navbar-custom .nav-link {
@@ -71,10 +72,10 @@
     padding: 110px 0;
     height: 80vh;   /* for santa image height */
   }
-  /* .tag-line{
-    font-size: 5rem;
-    color: rgb(155, 20, 20);
-  } */
+  .tag-line{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+  }
   .hero-title {
     font-size: 3rem;
     font-weight: bold;
@@ -102,6 +103,12 @@
   .card-custom {
     background-color: #fff3e6;
     border: 1px solid #ff204e;
+  }
+  .know-about-christmas{
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
 
@@ -181,6 +188,57 @@
 }
 
 /* alert boxes ends  */
+
+
+
+/* gifts.html style starts here  */
+
+.gift-card {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+}
+
+.gift-card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.gift-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.gift-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.gift-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #E63946;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0f5ecb;
+  border: none;
+}
+
+.add-to-cart:hover {
+  background-color: #03324f;
+  transition: background-color 0.3s;
+}
+/* gifts.html style ends here  */
 
 
 

@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User        #imported by me, for authentication
 from django.contrib.auth import authenticate         #imported by me, for authentication
 from django.contrib.auth import login,logout
+from myapp.models import Gifts
 
 
 # Create your views here.
@@ -63,3 +64,10 @@ def user_logout(request):
 
 def dashboard(request):
     return render(request,'dashboard.html')
+
+
+def gifts(request):
+    context={}
+    g=Gifts.objects.filter(is_active=True) #filter and display only those data which are active
+    context['data']=g
+    return render(request,'gifts.html',context)

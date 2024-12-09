@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+
+<div class="row">
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Craft Gift Card 1 -->
+            {% for i in data %}
+            <div class="col-md-3 mb-4">
+                <div class="card gift-card">
+                    <img src="{{i.image.url}}" class="card-img-top" alt="Santa Statue">
+                    <div class="card-body">
+                        <h5 class="card-title gift-name">{{i.name}}</h5>
+                        <p class="card-text gift-description">{{i.gdetails}}</p>
+                        <p class="gift-price"><i class="bi bi-currency-rupee"></i>{{i.price}}</p>
+                        <a href="#" class="btn btn-primary add-to-cart js-add-to-cart" onclick="addToCart(this)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock 'main' %}

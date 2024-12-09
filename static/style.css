@@ -63,14 +63,18 @@
 
   .hero-section {
     /* background-image: url("{% static 'images/Santa-Claus.webp' %}"); */
-    background-image: url("https://santaclausvillage.info/wp-content/uploads/2023/11/20160226-_DSC6638-Edit-Copy-scaled.jpg");
+    background-image: url("https://cdn.britannica.com/38/196638-050-94E05EF4/Santa-Claus.jpg");
+    /* background-image: url("https://santaclausvillage.info/wp-content/uploads/2023/11/20160226-_DSC6638-Edit-Copy-scaled.jpg"); */
     background-size: cover;
     background-position: center;
-    /* color: rgb(255, 255, 255); */
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 110px 0;
     height: 80vh;   /* for santa image height */
   }
+  /* .tag-line{
+    font-size: 5rem;
+    color: rgb(155, 20, 20);
+  } */
   .hero-title {
     font-size: 3rem;
     font-weight: bold;
